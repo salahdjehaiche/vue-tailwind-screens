@@ -1,0 +1,47 @@
+@tailwind base;
+
+@tailwind components;
+/*----------buttons--------*/
+.button-white{
+    @apply w-full rounded-full bg-white px-5 text-black py-1 text-sm;
+}
+.button-blue{
+    @apply w-full shadow-sm rounded-lg bg-green-blue px-5 py-2 text-xl my-4 text-white font-bold ;
+}
+.button-lightgray{
+    @apply w-full shadow-sm rounded-lg bg-graylime px-5 py-2 text-xl my-4 text-green-blue font-bold;
+}
+
+/*--------------div------------*/
+.divLightBlue{
+    @apply w-full rounded-full bg-lightgreen-blue px-3 text-white
+}
+.flexible{
+    @apply relative flex items-center justify-between h-auto
+}
+.divbuttons{
+    @apply flex h-auto inset-x-0 bottom-0 relative
+}
+
+
+.reponse{
+    @apply flex flex-wrap bg-lightgray rounded-full my-4;
+}
+.reponse div{
+    @apply w-1/2 px-4 py-2 h-auto font-bold 
+}
+.reponse div.Selected{
+    @apply  bg-darkgreen-blue text-white rounded-full
+}
+.reponse div.UnSelected{
+    @apply  bg-lightgray   
+}
+
+
+.checkbox{
+    @apply bg-white border-2 rounded border-green-blue w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2
+}
+input:checked + svg {
+     @apply block fill-current w-6 h-6 text-green-blue pointer-events-none;
+}
+@tailwind utilities;
